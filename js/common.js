@@ -31,9 +31,19 @@ $(document).ready(function() {
 		$(".top_phone .tab_item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
 	
+	$(".bottom_phone .wrapper .tab").click(function() {
+		$(".bottom_phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".bottom_phone .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+	
 	$(".tabs_h .wrapper .tab").click(function() {
 		$(".tabs_h .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
 		$(".tabs_h .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+	
+	$(".contacts_top .tab").click(function() {
+		$(".contacts_top .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".s_contacts .tab_item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {

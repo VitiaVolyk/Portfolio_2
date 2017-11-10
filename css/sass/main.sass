@@ -23,7 +23,8 @@ h1
 	font-family: CleanvertisingLight, sans-serif
 	margin: 0
 	
-section
+section,
+footer
 	padding: 58px 0 68px
 	&.s_darck
 		h2,h3,p
@@ -53,6 +54,11 @@ header
 	
 .top_phone
 	text-align: right
+
+.bottom_phone
+	text-align: center;
+	margin-top: 60px;
+	color: $red_color
 	
 .tab_item
 	display: none
@@ -60,16 +66,22 @@ header
 .tab_item:first-child
 	display: block
 	
-.top_phone .wrapper .tab
-	text-transform: uppercase
-	cursor: pointer
+.top_phone ,
+.bottom_phone
+	.wrapper .tab
+		text-transform: uppercase
+		cursor: pointer
 	
-.top_phone .wrapper .active
-	text-decoration: underline
-.top_phone .tab_item
-	display: none
-	font-size: 35px
-	font-family: "RobotoBold", sans-serif
+.top_phone ,
+.bottom_phone
+	.wrapper .active
+		text-decoration: underline
+.top_phone ,
+.bottom_phone
+	.tab_item
+		display: none
+		font-size: 35px
+		font-family: "RobotoBold", sans-serif
 	
 	
 .top_h 
@@ -344,3 +356,69 @@ body textarea:required:valid
 		opacity: .5;
 		&.active
 			opacity: .8;
+			
+.s_back
+	background-image: url(../img/red_bg.jpg);
+	background-position: top center;
+	text-align: center;
+	padding: 40px 0;
+	h3
+		margin: 0 20px 45px
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 26px;
+		text-align: center;
+		background-color: rgba(255,255,255,.13)
+		padding: 10px 0;
+	.button
+		margin: auto;
+		
+.s_contacts
+	padding-bottom: 0;
+	.wrapper
+		margin-top: 15px;
+		font-size: 18px;
+	.contacts_top
+	text-align: center;
+	h2
+		color: #000;
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 0;
+		height: 45px;
+		line-height: 45px;
+	.tabs
+		display: inline-block;
+		vertical-align: middle;
+		height: 45px;
+		line-height: 45px;
+		margin-left: 20px;
+		.tab
+			float: left;
+			padding: 0 60px;
+			border: 5px $red_color solid
+			line-height: 38px;
+			color: $red_color
+			&:first-child
+				border-radius: 3px 0 0 3px;
+			&:last-child
+				border-radius: 0  3px 3px 0;
+			&.active
+				background-color: $red_color;
+				color: #fff
+				
+				
+.map
+	margin-top: 20px;
+	min-height: 480px;
+	background-color: #E1D6B0;
+	
+footer
+	h2
+		color: #000;
+		margin-bottom: 30px;
+	p
+	text-align: center;
+	a
+		margin-top: 50px
+	
