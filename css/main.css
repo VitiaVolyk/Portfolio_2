@@ -6,7 +6,8 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialised;
+  overflow-x: hidden; }
 
 h1 {
   color: #fff;
@@ -419,3 +420,11 @@ footer {
     margin-bottom: 30px; }
   footer a {
     margin-top: 50px; }
+
+#hidden_form {
+  max-width: 420px;
+  margin: auto;
+  position: relative; }
+  #hidden_form h2 {
+    text-align: center;
+    font-weight: normal; }

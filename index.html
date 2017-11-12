@@ -14,10 +14,12 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.2.min.css" />
 	<link rel="stylesheet" href="libs/MyFonts/stylesheet.css" />
 	<link rel="stylesheet" href="libs/Owl/assets/owl.carousel.min.css" />
-	<link rel="stylesheet" href="libs/popap/magnific-popup.css" />
+	<link rel="stylesheet" href="libs/popup/magnific-popup.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
 
 </head>
 <body>
@@ -73,7 +75,7 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, aspernatur vitae totam officia doloribus dolores fugiat. Maxime, assumenda, impedit, iste sunt nemo corrupti in illo blanditiis quasi molestias cum ipsam.</p>
 								</div>
 								<div class="button_wrap ">
-									<a href="#" class="button btn_red">Начать обучение</a>
+									<a href="#hidden_form" class="button btn_red popup_c">Начать обучение</a>
 								</div>
 							</div>
 						</div>
@@ -242,7 +244,7 @@
 			<div class="row ">
 				<div class="col-md-12">
 					<h3>Повышение знаний с ProKurs — это оптимальное сочетание интенсива и углубленного подхода.</h3>
-					<a href="" class="button btn_white">Отправить заявку</a>
+					<a href="#hidden_form" class="button btn_white popup_c">Отправить заявку</a>
 				</div>
 			</div>
 		</div>
@@ -289,24 +291,36 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" class="button btn_red">Заказать звонок</a>
+					<a href="#hidden_form" class="button btn_red popup_c">Заказать звонок</a>
 				</div>
 			</div>
 		</div>
 	</footer>
 	
-	<i class="my my_a"></i>
-	<i class="my my_a"></i>
-	<i class="my my_a"></i>
-	<i class="my my_a"></i>
-	<i class="my my_a"></i>
-	<i class="my my_a"></i>
-	<i class="my my_a"></i>
-	<i class="my my_a"></i>
-	<i class="my my_a"></i>
-	<i class="my my_a"></i>
-	<div class="hidden"></div>
-
+	<div class="hidden">
+		<form id="hidden_form">
+			<h2>Связатся с нами</h2>
+			<label>
+				<span>Ваше имя:</span>
+				<input type="text" name="name" required/>
+			</label>
+			<label>
+				<span>Ваш телефон:</span>
+				<input type="text" name="phone" required/>
+			</label>
+			<label>
+				<span>Ваш город:</span>
+				<select name="city">
+					<option>Москва</option>
+					<option>Караганда</option>
+				</select>
+			</label>
+			<div class="button_wrap">
+				<button class="button btn_green">Отправить заявку</button>
+			</div>
+		</form>
+	</div>
+	
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -319,6 +333,9 @@
 	<script src="libs/popup/jquery.magnific-popup.min.js"></script>
 	<script src="libs/stellar/jquery.stellar.min.js"></script>
 	<script src="libs/Owl/owl.carousel.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
 	
 	<script src="js/common.js"></script>
 
