@@ -56,20 +56,18 @@ header {
   text-align: center;
   margin-top: 60px;
   color: #9B1818; }
+
 .cor_1 {
-	position: absolute;
-	right: 0;
-}
-	
+  position: absolute;
+  right: 0; }
+
 .tab_item {
   display: none;
-	overflow: auto;
-	height: 180px;	
-  }
+  overflow: auto;
+  height: 180px; }
 
-.wrapper .tab_content .mp{
-	height: auto;
-}
+.wrapper .tab_content .mp {
+  height: auto; }
 
 .tab_item:first-child {
   display: block; }
@@ -134,9 +132,7 @@ header {
     font-size: 18px;
     color: #000;
     text-transform: uppercase;
-	height: 260px;
-	
-	}
+    height: 260px; }
 
 .button {
   border: none;
@@ -160,12 +156,11 @@ header {
     background-color: #fff;
     color: #000; }
 
-.button_wrap {
-    text-align: right;
-    bottom: 15px;
-    position: absolute;
-    right: 30px;
-}
+.button_wrap_1 {
+  text-align: right;
+  bottom: 15px;
+  position: absolute;
+  right: 30px; }
 
 a.button {
   color: #fff;
